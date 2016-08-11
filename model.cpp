@@ -31,7 +31,6 @@ QPixmap Model::sendPixmap(int number, bool isRed)
 
 //slots
 
-void Model::startTimer(int ignore, bool isThisLoadedGame)
 {
     if (!isThisLoadedGame)
     {
@@ -142,7 +141,7 @@ void Model::isThisWin()
         int y = 0;
         for ( int i = 0; i < 9; ++i )
         {
-            int y = i+1;
+            y = i+1;
             for ( ; y < 9; ++y )
             {
                 if ( modelTab[x][i] == modelTab[x][y] )
@@ -158,7 +157,7 @@ void Model::isThisWin()
         int y = 0;
         for ( int i = 0; i < 9; ++i )
         {
-            int y = i+1;
+            y = i+1;
             for ( ; y < 9; ++y )
             {
                 if ( modelTab[i][x] == modelTab[y][x] )
