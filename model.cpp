@@ -31,6 +31,7 @@ QPixmap Model::sendPixmap(int number, bool isRed)
 
 //slots
 
+void Model::startTimer(int, bool isThisLoadedGame)
 {
     if (!isThisLoadedGame)
     {
